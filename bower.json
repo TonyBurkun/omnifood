@@ -1,0 +1,20 @@
+{
+  "name": "Omnifood",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Anton Burkun <burkun.anton@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}
