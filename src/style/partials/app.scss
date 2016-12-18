@@ -1,0 +1,120 @@
+.headers-style{
+  text-transform: uppercase;
+  font-weight: $base-font-weight;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+
+
+
+
+/*----------------------*/
+/*HEADER*/
+/*----------------------*/
+
+header{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url(../img/hero.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.here-text-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color:  #fff;
+    font-size: 240%;
+   @extend .headers-style;
+  }
+}
+
+.navigation-block{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+.main-nav{
+  float: right;
+  list-style: none;
+
+  li{
+    display: inline-block;
+    margin-left: 40px;
+    a,
+    a:visited{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 90%;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+
+    a:hover,
+    a:active{
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+
+/*------------------*/
+/*FIRST SECTION*/
+/*------------------*/
+
+h2{
+  font-size: 180%;
+  text-align: center;
+  margin-bottom: 30px ;
+  @extend .headers-style;
+
+  &:after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: #e67e22;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+.long-copy{
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box{
+  padding: 1%;
+
+  p{
+    font-size: 90%;
+    line-height: 145%;
+  }
+}
+
+h3{
+  font-size: 110%;
+  margin-bottom: 15px;
+  @extend .headers-style;
+  letter-spacing: 0;
+}
