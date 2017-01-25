@@ -99,6 +99,63 @@
     display: none;
   }
 
+  .navigation-block{
+    align-items: flex-start;
+  }
+
+  .mobile-nav-icon{
+    display: inline-block;
+  }
+
+  .main-nav{
+    float: left;
+    flex-grow: 1;
+
+    li{
+      display: block;
+      a:link,
+      a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+      }
+      a:hover{
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .sticky{
+
+    .main-nav{
+
+      li{
+        a,
+        a:visited{
+          padding: 10px 0;
+        }
+        a:hover{
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .mobile-nav-icon{
+      i{
+        color: #555;
+      }
+    }
+
+    .logo-black{
+      display: block;
+    }
+
+    .logo{
+      display: none;
+    }
+  }
+
   h1{
     font-size: 180%;
   }

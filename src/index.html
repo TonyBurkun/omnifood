@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <title>Omnifood</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="../img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
 
@@ -19,24 +29,25 @@
         <div class="group">
            <div class="navigation-block">
                <img src="../img/logo-white.png" alt="Omnifood logo" class="logo">
-               <ul class="main-nav">
-                   <li><a href="#">Food delivery</a></li>
-                   <li><a href="#">How it works</a></li>
-                   <li><a href="#">Our cities</a></li>
-                   <li><a href="#">Sing Up</a></li>
-
+               <img src="../img/logo.png" alt="Omnifood logo" class="logo-black">
+               <ul class="main-nav main-nav--js">
+                   <li><a href="#features">Food delivery</a></li>
+                   <li><a href="#works">How it works</a></li>
+                   <li><a href="#cities">Our cities</a></li>
+                   <li><a href="#plans">Sing Up</a></li>
                </ul>
+               <a class="mobile-nav-icon nav-icon--js"><i class="ion-navicon-round"></i></a>
            </div>
         </div>
     </nav>
     <div class="here-text-box">
         <h1>Goodbye junk food.<br/> Hello super healthy meals.</h1>
-        <a href="#" class="btn btn-full">I'm hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
+        <a href="#" class="btn btn-full scroll-to-plans--js">I'm hungry</a>
+        <a href="#" class="btn btn-ghost scroll-to-start--js">Show me more</a>
     </div>
 </header>
 
-<section class="section-features">
+<section class="section-features section-features--js" id="features">
     <div class="group">
         <h2>Get food fast — not fast food</h2>
         <p class="long-copy">
@@ -44,7 +55,7 @@
             No time for cooking. So let us take care of that, we’re really good at it, we promise!
         </p>
     </div>
-    <div class="group">
+    <div class="group wp-1--js">
         <div class="col span_3_of_12 box">
             <i class="ion-ios-infinite-outline icon-big"></i>
             <h3>Up to 365 days/year</h3>
@@ -125,12 +136,12 @@
     </ul>
 </section>
 
-<section class="section-steps">
+<section class="section-steps" id="works">
     <div class="group">
         <h2>How it works - Simple as 1, 2, 3</h2>
     </div>
     <div class="group">
-        <div class="col span_6_of_12 steps-box">
+        <div class="col span_6_of_12 steps-box wp-2--js">
             <img src="img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
         </div>
         <div class="col span_6_of_12 steps-box">
@@ -166,11 +177,11 @@
     </div>
 </section>
 
-<section class="section-cities">
+<section class="section-cities" id="cities">
     <div class="group">
         <h2>We're currently in these cities</h2>
     </div>
-    <div class="group">
+    <div class="group wp-3--js">
         <div class="col span_3_of_12 box">
             <img src="img/lisbon-3.jpg" alt="Lisbon">
             <h3>Lisbon</h3>
@@ -273,14 +284,14 @@
 
 </section>
 
-<section class="section-plans">
+<section class="section-plans section-plans--js" id="plans">
     <div class="group">
         <h2>Start eating healthy today</h2>
     </div>
 
    <div class="group">
        <div class="col span_4_of_12">
-           <div class="plan-box">
+           <div class="plan-box wp-4--js">
                <div>
                    <h3>Premium</h3>
                    <p class="plan-price">$399 <span>/ month</span></p>
@@ -454,6 +465,9 @@
 
 
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
+<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 </body>
 </html>
 
