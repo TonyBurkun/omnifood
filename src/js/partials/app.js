@@ -77,14 +77,24 @@ $(document).ready(function () {
             icon.addClass('ion-navicon-round');
         }
 
-
-//Maps
-    new GMaps({
-        div: '.map',
-        lat: -12.043333,
-        lng: -77.028333
     });
 
+    //Maps
+    var map = new GMaps({
+        div: '.map',
+        lat: 46.42,
+        lng: 30.9,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 46.4442562,
+        lng: 30.73,
+        title: 'Odessa',
+        infoWindow: {
+            content: '<p>Odessa HQ</p>'
+        }
     });
 
 });
+

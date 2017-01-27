@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Omnifood is premium food delivery service with the mission to bring affordable and healthy meals to as
                                        many people as possible">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -358,66 +357,61 @@
 </section>
 
 <section class="section-form">
-    <div class="map" id="map"></div>
-    <div class="group">
-        <h2>We're happy to hear from you</h2>
-    </div>
-    <div class="group">
-        <form method="post" action="#" class="contact-form">
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label for="name">Name</label>
+    <div class="map"></div>
+    <div class="form-box">
+        <div class="group">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="group">
+            <form method="post" action="#" class="contact-form">
+                <div class="group">
+                    <div class="col span_5_of_12">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span_7_of_12">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
                 </div>
-                <div class="col span_7_of_12">
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                <div class="group">
+                    <div class="col span_5_of_12">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_7_of_12">
+                        <input type="text" name="name" id="email" placeholder="Your email" required>
+                    </div>
                 </div>
-            </div>
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label for="email">Email</label>
+                <div class="group">
+                    <div class="col span_5_of_12">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span_7_of_12">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col span_7_of_12">
-                    <input type="text" name="name" id="email" placeholder="Your email" required>
+                <div class="group">
+                    <div class="col span_5_of_12">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span_7_of_12">
+                        <input type="checkbox" name="news" id="news" checked> Yes, please
+                    </div>
                 </div>
-            </div>
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label for="find-us">How did you find us?</label>
+                <div class="group">
+                    <div class="col span_5_of_12">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span_7_of_12">
+                        <textarea name="message" placeholder="You message"></textarea>
+                        <input type="submit" value="Send it!" class="btn btn-full">
+                    </div>
                 </div>
-                <div class="col span_7_of_12">
-                    <select name="find-us" id="find-us">
-                        <option value="friends" selected>Friends</option>
-                        <option value="search">Search engine</option>
-                        <option value="ad">Advertisement</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label>Newsletter?</label>
-                </div>
-                <div class="col span_7_of_12">
-                    <input type="checkbox" name="news" id="news" checked> Yes, please
-                </div>
-            </div>
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label>Drop us a line</label>
-                </div>
-                <div class="col span_7_of_12">
-                    <textarea name="message" placeholder="You message"></textarea>
-                </div>
-            </div>
-            <div class="group">
-                <div class="col span_5_of_12">
-                    <label>&nbsp;</label>
-                </div>
-                <div class="col span_7_of_12">
-                    <input type="submit" value="Send it!" class="btn btn-full">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </section>
 
@@ -472,17 +466,7 @@
 <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
 <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-<script>
 
-    var map;
-    function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-        });
-    }
-
-</script>
 </body>
 </html>
 
