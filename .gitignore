@@ -64,3 +64,6 @@ node_modules/gulp-sourcemaps/
 node_modules/gulp-uglify/
 node_modules/gulp-watch/
 node_modules/imagemin-pngquant/
+/.firebaserc
+/database.rules.json
+/firebase.json
